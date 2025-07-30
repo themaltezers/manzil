@@ -3,7 +3,7 @@ export default function Home() {
         <main>
             <section className="bg-[url('/banner.png')] bg-center bg-cover w-[100dvw] h-[80dvh]"></section>
 
-            <section className="w-[97%] mx-auto mb-8">
+            <section className="m-4 mb-8">
                 <div className="flex flex-col gap-4 mb-4">
                     <div className="flex flex-col gap-2">
                         <h3>THE HEART OF BRUNCH & CAKE</h3>
@@ -60,7 +60,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="w-[97%] mx-auto mb-8 flex flex-col gap-4 bg-[--primary]">
+            <section className="m-4 mb-8 flex flex-col gap-4 bg-[--primary]">
                 <div className="flex flex-col gap-2">
                     <h3>GREAT COMPANY</h3>
                     <h2>Our Guests, Our Family</h2>
@@ -74,7 +74,7 @@ export default function Home() {
                 <p>You’re not just a guest here—you’re part of the family.</p>
                 <div className="bg-[url('/banner.png')] bg-center bg-cover w-full h-[50dvh]"></div>
             </section>
-            <section className="w-[97%] mx-auto mb-8 flex flex-col gap-4 ">
+            <section className="m-4 mb-8 flex flex-col gap-4 ">
                 <div className="flex flex-col gap-2">
                     <h3>WORLDWIDE PRESENCE</h3>
                     <h2>A Global Journey of Flavours</h2>
