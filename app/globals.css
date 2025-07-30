@@ -34,3 +34,8 @@ h3 {
     color: var(--primary);
     font-weight: 700;
 }
+
+svg {
+    width: 36px;
+    height: 36px;
+}

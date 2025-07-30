@@ -1,4 +1,3 @@
-import styles from "@/styles/home.module.scss";
 export default function Home() {
     return (
         <main>
@@ -56,7 +55,7 @@ export default function Home() {
                         with and for the people – creating spaces that invite
                         connection, comfort, and delight.
                     </p>
-                    <div className={styles.whos__image}></div>
+                    <div className="bg-black w-full h-[40dvh]"></div>
                 </div>
             </section>
 
@@ -72,7 +71,7 @@ export default function Home() {
                     weekend tradition, our community makes it all meaningful.
                 </p>
                 <p>You’re not just a guest here—you’re part of the family.</p>
-                <div className={styles.carousel}></div>
+                <div className="bg-black h-[50dvh] w-full"></div>
             </section>
             <section className="w-[97%] mx-auto mb-8 flex flex-col gap-4 ">
                 <div className="flex flex-col gap-2">
@@ -87,7 +86,7 @@ export default function Home() {
                     Explore the map to discover where we’ve planted roots, and
                     where we’re headed next.
                 </p>
-                <div className={styles.presence__image}></div>
+                <div className="bg-black h-[60dvh]"></div>
             </section>
         </main>
     );

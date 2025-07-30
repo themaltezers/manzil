@@ -1,21 +1,39 @@
 import Link from "next/link";
-import styles from "@/styles/components/header.module.scss";
+import {
+    FaSquareInstagram,
+    FaSquareFacebook,
+    FaLinkedin,
+} from "react-icons/fa6";
+
 const Footer = () => {
     return (
-        <footer className={styles.footer}>
-            <section className="contact">
+        <footer className="flex flex-col gap-4 w-[97%] mx-auto">
+            <section className="flex flex-col gap-2">
                 <h3>Nous contacter</h3>
                 <ul className="flex gap-2">
-                    <li>facebook</li>
-                    <li>instagram</li>
-                    <li>linkedin</li>
+                    <li>
+                        <Link href={"#"}>
+                            <FaSquareInstagram />
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href={"#"}>
+                            <FaSquareFacebook />
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href={"#"}>
+                            {" "}
+                            <FaLinkedin />
+                        </Link>
+                    </li>
                 </ul>
             </section>
             <ul className="flex flex-col gap-2 mb-8">
-                <h3>Explore our site</h3>
+                <h3>Explorer notre site</h3>
                 <li>A propos</li>
+                <li>Menu</li>
                 <li>Carrière</li>
-                <li>Nous contacter</li>
             </ul>
             <p className="mb-8">
                 Copyright 2025 Manzil Brunch | Par <Link href="#">1344.fr</Link>
