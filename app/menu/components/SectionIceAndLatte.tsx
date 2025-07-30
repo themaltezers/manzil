@@ -3,37 +3,37 @@ const SectionIceAndLatte = () => {
     <section id="ice-and-latte" className="bg-[#fcfbf8] p-8">
       <h2 className="text-4xl text-center text-[#bc8158] mb-8">CAFÉ & THÉ GLACÉS</h2>
 
-      <div className="grid grid-cols-2 gap-y-4 mb-4">
-        
-        <div>
+      <div className="grid grid-cols-4 gap-y-4 mb-4">
+
+        <div className="col-span-3">
             <span className="text-black block">SPANISH LATTE</span>
         </div>
-        <div className="text-black text-right">
+        <div className="col-span-1 text-black text-right">
             <span>4,90</span>
         </div>
 
-        <div>
+        <div className="col-span-3">
             <span className="text-black block">ICED LATTE</span>
             <small className="text-gray-600 text-sm italic">caramel ou pistache 2€</small>
         </div>
-        <div className="text-black text-right">
+        <div className="col-span-1 text-black text-right">
             <span>4,90</span>
         </div>
 
-        <div>
+        <div className="col-span-3">
             <span className="text-black block">THÉ GLACÉ PÊCHE MENTHE</span>
         </div>
-        <div className="text-black text-right">
+        <div className="col-span-1 text-black text-right">
             <span>5,90</span>
         </div>
 
-        <div>
+        <div className="col-span-3">
             <span className="text-black block">THÉ GLACÉ À LA ROSE</span>
         </div>
-        <div className="text-black text-right">
+        <div className="col-span-1 text-black text-right">
             <span>5,90</span>
         </div>
-        
+
       </div>
 
     </section>
