@@ -1,9 +1,6 @@
-import React from "react";
-import Image from "next/image";
-
 const Header = () => {
     return (
-        <header>
+        <header className="w-full flex justify-around">
             <div className="image">logo</div>
             <div className="">Menu</div>
         </header>
