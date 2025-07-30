@@ -11,7 +11,7 @@ const SectionSodas = () => {
         <span className="text-black">SELECTO</span>
         <span className="text-black text-right">2,50</span>
 
-        <span className="text-black">EAU CRISTALINE</span>
+        <span className="text-black">CRYSTAL WATER</span>
         <span className="text-black text-right">2,00</span>
 
       </div>

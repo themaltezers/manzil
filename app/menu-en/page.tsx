@@ -1,3 +1,4 @@
+// english version of the menu page
 import HeaderMenu from './components/HeaderMenu';
 
 import SectionSetMenus from './components/SectionSetMenus';

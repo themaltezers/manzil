@@ -1,13 +1,13 @@
 const SectionSalty = () => {
     return (
         <section id="salty-menu" className="bg-[#fcfbf8] p-8">
-            <h2 className="text-4xl text-center text-[#bc8158] mb-8">NOS SALÉS</h2>
+            <h2 className="text-4xl text-center text-[#bc8158] mb-8">OUR SAVORY DISHES</h2>
 
             <div className="grid grid-cols-2 gap-y-4 mb-4">
                 <div>
                     <span className="text-black block">AVOCADO TOAST</span>
                     <small className="text-gray-600 text-sm italic">
-                        guacamole d’avocat, fromage frais, oeuf poché, paprika, citron vert
+                        avocado guacamole, fresh cheese, poached egg, paprika, lime
                     </small>
                 </div>
                 <div className="text-black text-right">
@@ -15,9 +15,9 @@ const SectionSalty = () => {
                 </div>
 
                 <div>
-                    <span className="text-black block">MSEMEN GARNI</span>
+                    <span className="text-black block">STUFFED MSEMEN</span>
                     <small className="text-gray-600 text-sm italic">
-                        msemens frais, garni de poulet mariné aux épices savoureuse et d’une couche fondante de cheddar
+                        fresh msemens, stuffed with spice-marinated chicken and a melting layer of cheddar
                     </small>
                 </div>
                 <div className="text-black text-right">
@@ -27,7 +27,7 @@ const SectionSalty = () => {
                 <div>
                     <span className="text-black block">MANZIL ADDICT</span>
                     <small className="text-gray-600 text-sm italic">
-                        sur une base de msemen, 1 avocat tranché, boeuf effiloché, 2 oeufs pochés accompagnés d’une sauce hollandaise
+                        on a msemen base, 1 sliced avocado, shredded beef, 2 poached eggs with hollandaise sauce
                     </small>
                 </div>
                 <div className="text-black text-right">
@@ -35,9 +35,9 @@ const SectionSalty = () => {
                 </div>
 
                 <div>
-                    <span className="text-black block">SOUPE & BRICK</span>
+                    <span className="text-black block">SOUP & BRICK</span>
                     <small className="text-gray-600 text-sm italic">
-                        soupe du jour, brick carré à la pomme de terre, poulet et cheddar
+                        soup of the day, square brick with potato, chicken and cheddar
                     </small>
                 </div>
                 <div className="text-black text-right">
@@ -45,9 +45,9 @@ const SectionSalty = () => {
                 </div>
 
                 <div>
-                    <span className="text-black block">LE CLUB</span>
+                    <span className="text-black block">THE CLUB</span>
                     <small className="text-gray-600 text-sm italic">
-                        pain de campagne toasté, couche de pesto, poelée de tomate cerise à l’ail, strachiatella, pastrami vinaigre balsamique aux figues
+                        toasted country bread, pesto layer, garlic cherry tomato sauté, stracciatella, pastrami with fig balsamic vinegar
                     </small>
                 </div>
                 <div className="text-black text-right">

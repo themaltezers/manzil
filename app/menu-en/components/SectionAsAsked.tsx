@@ -5,7 +5,7 @@ const SectionAsAsked = () => {
 
             <div className="grid grid-cols-2 gap-y-4 mb-4">
                 <div>
-                    <span className="text-black block">ASSORTIMENT ORIENTAL</span>
+                    <span className="text-black block">ORIENTAL ASSORTMENT</span>
                     <small className="text-gray-600 text-sm italic block">msemen</small>
                     <small className="text-gray-600 text-sm italic block">baghrir</small>
                     <small className="text-gray-600 text-sm italic block">harcha</small>
@@ -15,10 +15,10 @@ const SectionAsAsked = () => {
                 </div>
 
                 <div>
-                    <span className="text-black block">SUPPLÉMENTS</span>
-                    <small className="text-gray-600 text-sm italic block">msemen fromage</small>
-                    <small className="text-gray-600 text-sm italic block">harcha fromage</small>
-                    <small className="text-gray-600 text-sm italic block">cake maison</small>
+                    <span className="text-black block">SUPPLEMENTS</span>
+                    <small className="text-gray-600 text-sm italic block">cheese msemen</small>
+                    <small className="text-gray-600 text-sm italic block">cheese harcha</small>
+                    <small className="text-gray-600 text-sm italic block">homemade cake</small>
                 </div>
                 <div className="text-black text-right">
                     <span>3,50</span>
@@ -33,9 +33,9 @@ const SectionAsAsked = () => {
 
                 <div>
                     <small className="text-gray-600 text-sm italic block">Nutella</small>
-                    <small className="text-gray-600 text-sm italic block">Confiture</small>
-                    <small className="text-gray-600 text-sm italic block">Fromage</small>
-                    <small className="text-gray-600 text-sm italic block">Miel</small>
+                    <small className="text-gray-600 text-sm italic block">Jam</small>
+                    <small className="text-gray-600 text-sm italic block">Cheese</small>
+                    <small className="text-gray-600 text-sm italic block">Honey</small>
                 </div>
                 <div className="text-black text-right">
                     <span>1,00</span>
