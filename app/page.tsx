@@ -1,7 +1,8 @@
 export default function Home() {
     return (
         <main>
-            <section className="h-[90dvh] w-[100dvw] bg-black mb-8"></section>
+            <section className="bg-[url('/banner.png')] bg-center bg-cover w-[100dvw] h-[80dvh]"></section>
+
             <section className="w-[97%] mx-auto mb-8">
                 <div className="flex flex-col gap-4 mb-4">
                     <div className="flex flex-col gap-2">
@@ -55,11 +56,11 @@ export default function Home() {
                         with and for the people – creating spaces that invite
                         connection, comfort, and delight.
                     </p>
-                    <div className="bg-black w-full h-[40dvh]"></div>
+                    <div className="bg-[url('/facade-brunch.png')] bg-center bg-cover w-full h-[40dvh]"></div>
                 </div>
             </section>
 
-            <section className="w-[97%] mx-auto mb-8 flex flex-col gap-4 ">
+            <section className="w-[97%] mx-auto mb-8 flex flex-col gap-4 bg-[--primary]">
                 <div className="flex flex-col gap-2">
                     <h3>GREAT COMPANY</h3>
                     <h2>Our Guests, Our Family</h2>
@@ -71,7 +72,7 @@ export default function Home() {
                     weekend tradition, our community makes it all meaningful.
                 </p>
                 <p>You’re not just a guest here—you’re part of the family.</p>
-                <div className="bg-black h-[50dvh] w-full"></div>
+                <div className="bg-[url('/banner.png')] bg-center bg-cover w-full h-[50dvh]"></div>
             </section>
             <section className="w-[97%] mx-auto mb-8 flex flex-col gap-4 ">
                 <div className="flex flex-col gap-2">
@@ -86,7 +87,7 @@ export default function Home() {
                     Explore the map to discover where we’ve planted roots, and
                     where we’re headed next.
                 </p>
-                <div className="bg-black h-[60dvh]"></div>
+                <div className="bg-[url('/banner.png')] bg-center bg-cover w-full h-[60dvh]"></div>
             </section>
         </main>
     );
