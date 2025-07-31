@@ -1,35 +1,27 @@
 "use client";
+
 import Link from "next/link";
-import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useLanguageStore } from "@/stores/useLanguageStore";
 
 const Header = () => {
-    const router = useRouter();
-    const [lang, setLang] = useState("fr");
+    const lang = useLanguageStore((s) => s.lang);
+    const setLang = useLanguageStore((s) => s.setLang);
 
     const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-        const selectedLang = e.target.value;
+        const selectedLang = e.target.value as "fr" | "en" | "es" | "it";
         setLang(selectedLang);
-
-        if (selectedLang === "fr") {
-            router.push("/menu");
-        } else {
-            router.push(`/menu-${selectedLang}`);
-        }
     };
 
     return (
         <header className="w-full flex justify-around">
-            <Link href={"/"} className="image">
+            <Link href="/" className="image">
                 logo
             </Link>
-            <button
-                onClick={() =>
-                    router.push(lang === "fr" ? "/menu" : `/menu-${lang}`)
-                }
-            >
+
+            <Link href="/menu" className="image">
                 Menu
-            </button>
+            </Link>
+
             <select
                 name="language"
                 id="language-select"
