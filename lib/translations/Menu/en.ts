@@ -123,26 +123,22 @@ const fr = {
             items: [
                 {
                     name: "ORIENTAL ASSORTMENT",
-                    description: ["msemen", "baghrir", "harcha"],
+                    lines: ["msemen", "baghrir", "harcha"],
                     price: "2,50",
                 },
                 {
                     name: "SUPPLEMENTS",
-                    description: [
-                        "cheese msemen",
-                        "cheese harcha",
-                        "homemade cake",
-                    ],
+                    lines: ["cheese msemen", "cheese harcha", "homemade cake"],
                     price: "3,50",
                 },
                 {
                     name: "",
-                    description: ["Amlou"],
+                    lines: ["Amlou"],
                     price: "2,00",
                 },
                 {
                     name: "",
-                    description: ["Nutella", "Jam", "Cheese", "Honey"],
+                    lines: ["Nutella", "Jam", "Cheese", "Honey"],
                     price: "1,00",
                 },
             ],

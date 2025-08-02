@@ -123,12 +123,12 @@ const es = {
             items: [
                 {
                     name: "SURTIDO ORIENTAL",
-                    details: ["msemen", "baghrir", "harcha"],
+                    lines: ["msemen", "baghrir", "harcha"],
                     price: "2,50",
                 },
                 {
                     name: "SUPLEMENTOS",
-                    details: [
+                    lines: [
                         "msemen con queso",
                         "harcha con queso",
                         "pastel casero",
@@ -136,11 +136,11 @@ const es = {
                     price: "3,50",
                 },
                 {
-                    details: ["Amlou"],
+                    lines: ["Amlou"],
                     price: "2,00",
                 },
                 {
-                    details: ["Nutella", "Mermelada", "Queso", "Miel"],
+                    lines: ["Nutella", "Mermelada", "Queso", "Miel"],
                     price: "1,00",
                 },
             ],

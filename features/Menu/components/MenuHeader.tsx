@@ -1,4 +1,4 @@
-import { Language, t } from "@/lib/translations";
+import { Language, t } from "@/lib/translations/Menu";
 
 const MenuHeader = ({ lang }: { lang: Language }) => {
     return (
