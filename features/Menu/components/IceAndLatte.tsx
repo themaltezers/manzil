@@ -1,5 +1,5 @@
-import { t } from "@/lib/translations";
-import type { Language } from "@/lib/translations";
+import { t } from "@/lib/translations/Menu";
+import type { Language } from "@/lib/translations/Menu";
 
 const IceAndLatte = ({ lang }: { lang: Language }) => {
     const section = t<{

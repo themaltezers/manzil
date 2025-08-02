@@ -1,4 +1,4 @@
-import { Language, t } from "@/lib/translations";
+import { Language, t } from "@/lib/translations/Menu";
 
 const HotDrinks = ({ lang }: { lang: Language }) => {
     const section = t<{

@@ -1,4 +1,4 @@
-import { Language, t } from "@/lib/translations";
+import { Language, t } from "@/lib/translations/Menu";
 
 const SweetDishes = ({ lang }: { lang: Language }) => {
     const section = t<{
@@ -13,7 +13,7 @@ const SweetDishes = ({ lang }: { lang: Language }) => {
     return (
         <section id="sweet-dishes" className="bg-[#fcfbf8] p-8">
             <h2 className="text-4xl text-center text-[#bc8158] mb-8">
-                {section.title} b
+                {section.title}
             </h2>
 
             <div className="grid grid-cols-4 gap-y-4 mb-4">
