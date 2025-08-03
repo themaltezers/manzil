@@ -37,27 +37,29 @@ export default function Home() {
               aria-label={hero.alt}
             ></section>
 
-            <section className="m-4 mb-8">
-                <div className="flex flex-col gap-4 mb-4">
-                    <div className="flex flex-col gap-2">
-                        <h3>{intro.subtitle}</h3>
-                        <h2>{intro.title}</h2>
+            <section className="m-4 mb-8 lg: flex flex-row">
+                <div className="">
+                    <div className="flex flex-col gap-4 mb-4">
+                        <div className="flex flex-col gap-2">
+                            <h3>{intro.subtitle}</h3>
+                            <h2>{intro.title}</h2>
+                        </div>
+                        {intro.paragraphs.map((p, i) => (
+                            <p key={i}>{p}</p>
+                        ))}
                     </div>
-                    {intro.paragraphs.map((p, i) => (
-                        <p key={i}>{p}</p>
-                    ))}
-                </div>
 
-                <div className="flex flex-col gap-4 mb-4">
-                    <h2>{philosophy.title}</h2>
-                    {philosophy.paragraphs.map((p, i) => (
-                        <p key={i}>{p}</p>
-                    ))}
-                    <div
-                        className="bg-[url('/facade-brunch.png')] bg-center bg-cover w-full h-[40dvh]"
-                        aria-label={philosophy.imageAlt}
-                    ></div>
+                    <div className="flex flex-col gap-4 mb-4">
+                        <h2>{philosophy.title}</h2>
+                        {philosophy.paragraphs.map((p, i) => (
+                            <p key={i}>{p}</p>
+                        ))}
+                    </div>
                 </div>
+                <div
+                    className="bg-[url('/facade-brunch.jpg')] bg-center bg-cover w-full h-[40dvh] lg:h-auto"
+                    aria-label={philosophy.imageAlt}
+                ></div>
             </section>
 
             <section className="m-4 mb-8 flex flex-col gap-4 bg-[--primary]">
@@ -69,7 +71,7 @@ export default function Home() {
                     <p key={i}>{p}</p>
                 ))}
                 <div
-                    className="bg-[url('/banner.png')] bg-center bg-cover w-full h-[50dvh]"
+                    className="bg-[url('/banner.png')] bg-center bg-cover w-full h-[50dvh] "
                     aria-label={guests.imageAlt}
                 ></div>
             </section>
@@ -81,7 +83,7 @@ export default function Home() {
                 </div>
                 <p>{global.paragraph}</p>
                 <div
-                    className="bg-[url('/banner.png')] bg-center bg-cover w-full h-[60dvh]"
+                    className="bg-[url('/voyage.jpg')] bg-center bg-cover w-full h-[60dvh]"
                     aria-label={global.imageAlt}
                 ></div>
             </section>
