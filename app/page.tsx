@@ -33,8 +33,8 @@ export default function Home() {
     return (
         <main>
             <section
-                className="bg-[url('/banner.png')] bg-center bg-cover w-[100dvw] h-[80dvh]"
-                aria-label={hero.alt}
+              className="bg-[url('/banner.png')] bg-center bg-cover w-dvw h-[80dvh]"
+              aria-label={hero.alt}
             ></section>
 
             <section className="m-4 mb-8">
