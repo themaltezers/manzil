@@ -87,6 +87,18 @@ export default function Home() {
                     aria-label={global.imageAlt}
                 ></div>
             </section>
+
+            <section id="instagram" className="m-4 mb-8 flex flex-col gap-4">
+              <div className="max-w-md w-full aspect-[4/5]">
+                <iframe
+                  src="https://www.instagram.com/p/DJzR9oVIEQ0/embed"
+                  className="w-full h-full border-0"
+                  allowFullScreen
+                ></iframe>
+              </div>
+
+
+            </section>
         </main>
     );
 }

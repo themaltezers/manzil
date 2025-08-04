@@ -13,7 +13,7 @@ const Header = () => {
     };
 
     return (
-        <header className="w-full flex justify-around fixed">
+        <header className="w-full flex justify-around fixed h-16 top-0 left-0">
             <Link href="/" className="image">
                 logo
             </Link>
