@@ -40,6 +40,7 @@ export default function Home() {
                 <h1 className="text-white text-5xl font-bold z-10">MANZIL</h1>
             </section>
 
+
             <section className="m-4 mb-8 lg:flex flex-row">
                 <div className="">
                     <div className="flex flex-col gap-4 mb-4">
@@ -90,6 +91,7 @@ export default function Home() {
                     aria-label={global.imageAlt}
                 ></div>
             </section>
+
             <section className="flex flex-col gap-4 justify-center items-center my-8">
                 <div className="bg-black w-full h-[450px]"></div>
                 <div className="text-center">
@@ -105,6 +107,7 @@ export default function Home() {
                     allowFullScreen=""
                     referrerPolicy="no-referrer-when-downgrade"
                 ></iframe>
+
             </section>
         </main>
     );
