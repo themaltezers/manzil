@@ -13,7 +13,9 @@ const Header = () => {
     };
 
     return (
-        <header className="w-full flex justify-around fixed h-16 top-0 left-0">
+
+        <header className="w-full flex justify-around fixed z-10">
+
             <Link href="/" className="image">
                 logo
             </Link>

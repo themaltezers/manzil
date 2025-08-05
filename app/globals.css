@@ -28,6 +28,11 @@ header {
     background: var(--background);
 }
 
+h1 {
+    font-size: 56px;
+    color: var(--primary);
+}
+
 h2 {
     text-transform: capitalize;
     font-size: 36px;
