@@ -33,11 +33,14 @@ export default function Home() {
     return (
         <main>
             <section
-                className="bg-[url('/banner.png')] bg-center bg-cover w-[100dvw] h-[80dvh]"
+                className="relative bg-[url('/banner.png')] bg-center bg-cover w-[100dvw] h-[80dvh] flex justify-center items-center"
                 aria-label={hero.alt}
-            ></section>
+            >
+                <div className="absolute inset-0 bg-black/20 z-0" />
+                <h1 className="text-white text-5xl font-bold z-10">MANZIL</h1>
+            </section>
 
-            <section className="m-4 mb-8 lg: flex flex-row">
+            <section className="m-4 mb-8 lg:flex flex-row">
                 <div className="">
                     <div className="flex flex-col gap-4 mb-4">
                         <div className="flex flex-col gap-2">
@@ -86,6 +89,22 @@ export default function Home() {
                     className="bg-[url('/voyage.jpg')] bg-center bg-cover w-full h-[60dvh]"
                     aria-label={global.imageAlt}
                 ></div>
+            </section>
+            <section className="flex flex-col gap-4 justify-center items-center my-8">
+                <div className="bg-black w-full h-[450px]"></div>
+                <div className="text-center">
+                    <h2 className="text-(--primary)">Horaires d'ouverture</h2>
+                    <p>Du lundi au dimanche : 10:00–16:00</p>
+                    <p>Fermé le vendredi</p>
+                </div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2903.8309789175673!2d5.3662750760230935!3d43.29686117540518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9c185a6a85275%3A0x7b59e7b720ee326a!2sManzil%20oriental%20brunch%20and%20the!5e0!3m2!1sfr!2sfr!4v1754393498060!5m2!1sfr!2sfr"
+                    width="100%"
+                    height="450"
+                    style={{ border: 0 }}
+                    allowFullScreen=""
+                    referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
             </section>
         </main>
     );
