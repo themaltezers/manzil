@@ -1,13 +1,15 @@
 "use client";
 
+import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 const slides = [
-    "/images/slide1.jpg",
-    "/images/slide2.jpg",
-    "/images/slide3.jpg",
-    "/images/slide4.jpg",
-    "/images/slide5.jpg",
+    "/carousel/slide1.jpg",
+    "/carousel/slide2.jpg",
+    "/carousel/slide3.jpg",
+    "/carousel/slide4.jpg",
+    "/carousel/slide5.jpg",
 ];
 
 const Carousel = () => {
@@ -22,18 +24,21 @@ const Carousel = () => {
     };
 
     return (
-        <div className="relative w-full max-w-4xl mx-auto overflow-hidden rounded-xl">
-            <div
-                className="flex transition-transform duration-500"
-                style={{ transform: `translateX(-${current * 100}%)` }}
-            >
+        <div className="relative w-full max-w-4xl mx-auto overflow-hidden ">
+            <div className="flex w-full h-[800px] transition-transform duration-500">
                 {slides.map((src, index) => (
-                    <img
+                    <Link
+                        href="https://www.instagram.com/manzil.brunch/"
                         key={index}
-                        src={src}
-                        alt={`Slide ${index}`}
-                        className="w-full flex-shrink-0 object-cover h-[400px]"
-                    />
+                        className="relative flex-shrink-0 w-full h-full"
+                    >
+                        <Image
+                            src={src}
+                            alt={`Slide ${index}`}
+                            fill
+                            className="object-cover"
+                        />
+                    </Link>
                 ))}
             </div>
 

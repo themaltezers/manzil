@@ -41,7 +41,6 @@ export default function Home() {
                 <h1 className="text-white text-5xl font-bold z-10">MANZIL</h1>
             </section>
 
-
             <section className="m-4 mb-8 lg:flex flex-row">
                 <div className="">
                     <div className="flex flex-col gap-4 mb-4">
@@ -105,10 +104,8 @@ export default function Home() {
                     width="100%"
                     height="450"
                     style={{ border: 0 }}
-                    allowFullScreen=""
                     referrerPolicy="no-referrer-when-downgrade"
                 ></iframe>
-
             </section>
         </main>
     );
