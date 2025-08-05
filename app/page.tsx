@@ -2,6 +2,7 @@
 
 import { useLanguageStore } from "@/stores/useLanguageStore";
 import { tHome } from "@/lib/translations/Home";
+import Carousel from "@/components/Carousel";
 
 export default function Home() {
     const lang = useLanguageStore((state) => state.lang); // 👈 Récupère la langue depuis le store
@@ -65,18 +66,18 @@ export default function Home() {
                 ></div>
             </section>
 
-            <section className="m-4 mb-8 flex flex-col gap-4 bg-[--primary]">
-                <div className="flex flex-col gap-2">
-                    <h3>{guests.subtitle}</h3>
+            <section className=" mb-8 flex flex-col gap-4 bg-(--primary) py-[100px]">
+                <div className="flex flex-col gap-2 text-center text-(--grey) px-8 mb-8">
+                    <h3 className="text-(--grey)">{guests.subtitle}</h3>
                     <h2>{guests.title}</h2>
+
+                    {guests.paragraphs.map((p, i) => (
+                        <p key={i} className="text-center">
+                            {p}
+                        </p>
+                    ))}
                 </div>
-                {guests.paragraphs.map((p, i) => (
-                    <p key={i}>{p}</p>
-                ))}
-                <div
-                    className="bg-[url('/banner.png')] bg-center bg-cover w-full h-[50dvh] "
-                    aria-label={guests.imageAlt}
-                ></div>
+                <Carousel />
             </section>
 
             <section className="m-4 mb-8 flex flex-col gap-4">

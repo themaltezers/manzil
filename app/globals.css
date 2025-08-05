@@ -4,6 +4,7 @@
     --background: #fcfbf8;
     --foreground: #171717;
     --primary: #bc8158;
+    --grey: #5e5e5e;
 }
 
 @theme inline {
@@ -39,7 +40,7 @@ h2 {
 }
 
 h3 {
-    color: var(--primary);
+    /* color: var(--primary); */
     font-weight: 700;
 }
 
