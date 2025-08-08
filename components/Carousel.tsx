@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 const slides = [
     "/images/slide1.jpg",
@@ -28,12 +29,16 @@ const Carousel = () => {
                 style={{ transform: `translateX(-${current * 100}%)` }}
             >
                 {slides.map((src, index) => (
-                    <img
-                        key={index}
-                        src={src}
-                        alt={`Slide ${index}`}
-                        className="w-full flex-shrink-0 object-cover h-[400px]"
-                    />
+                    <div key={index} className="w-full flex-shrink-0 h-[400px] relative">
+                        <Image
+                            src={src}
+                            alt={`Slide ${index}`}
+                            fill
+                            className="object-cover rounded-xl"
+                            sizes="(max-width: 1024px) 100vw, 1024px"
+                            priority={index === 0}
+                        />
+                    </div>
                 ))}
             </div>
 

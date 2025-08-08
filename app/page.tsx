@@ -3,6 +3,8 @@
 import { useLanguageStore } from "@/stores/useLanguageStore";
 import { tHome } from "@/lib/translations/Home";
 import Carousel from "@/components/Carousel";
+import Image from "next/image";
+import ReviewAll from "@/components/ReviewsAll";
 
 export default function Home() {
     const lang = useLanguageStore((state) => state.lang); // 👈 Récupère la langue depuis le store
@@ -33,13 +35,53 @@ export default function Home() {
 
     return (
         <main>
-            <section
-                className="relative bg-[url('/banner.png')] bg-center bg-cover w-[100dvw] h-[80dvh] flex justify-center items-center"
-                aria-label={hero.alt}
-            >
-                <div className="absolute inset-0 bg-black/20 z-0" />
-                <h1 className="text-white text-5xl font-bold z-10">MANZIL</h1>
-            </section>
+          <section className="relative w-full h-dvh overflow-hidden" aria-label="Hero" id="hero-banner">
+            {/* Image en background */}
+            <Image
+              src="/banner.png"
+              alt=""
+              fill
+              priority
+              sizes="100vw"
+              className="object-cover opacity-0 [animation-delay:1300ms] animate-[fadeIn_1500ms_ease-out_forwards] " // démarre après le H1
+            />
+
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-black/20" />
+
+            {/* Titre */}
+            <h1 className="absolute inset-0 z-10 flex items-center justify-center text-white text-5xl font-bold opacity-0 animate-[fadeIn_300ms_ease-out_forwards]">
+              MANZIL
+            </h1>
+          </section>
+
+          <section className="p-4" id="intro">
+            <div className="bg-terracotta mx-4 p-4 rounded text-white">
+              <h2 className=" text-2xl my-4">
+                Bienvenue au Manzil, votre brunch oriental à Marseille
+              </h2>
+
+              <p>
+                Offrez-vous un voyage culinaire où la tradition marocaine rencontre la créativité contemporaine. Chaque assiette raconte une histoire : celle des épices envoûtantes, des recettes héritées, et de l’audace de les revisiter.
+              </p>
+            </div>
+
+            <div className="relative left-0 bottom-8 -z-10">
+              <Image
+                src="/meilleur-plat.jpg"
+                alt="Meilleur Plat"
+                className="object-cover rounded"
+                width={800}
+                height={600}
+                priority
+              />
+            </div>
+          </section>
+
+          <section id="reviews-animation" className="p-4">
+            <ReviewAll>
+            </ReviewAll>
+          </section>
 
 
             <section className="m-4 mb-8 lg:flex flex-row">
