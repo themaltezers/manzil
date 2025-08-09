@@ -14,7 +14,7 @@ const Header = () => {
 
     return (
 
-        <header className="w-full flex justify-around fixed z-10">
+        <header className="w-full flex justify-around fixed z-20">
 
             <Link href="/" className="image">
                 logo
@@ -29,11 +29,12 @@ const Header = () => {
                 id="language-select"
                 value={lang}
                 onChange={handleChange}
+                className="rounded border-terracotta shadow-sm sm:text-sm my-4"
             >
-                <option value="fr">FRA</option>
-                <option value="en">ENG</option>
-                <option value="it">ITA</option>
-                <option value="es">ESP</option>
+                <option value="fr">FR</option>
+                <option value="en">EN</option>
+                <option value="it">IT</option>
+                <option value="es">ES</option>
             </select>
         </header>
     );

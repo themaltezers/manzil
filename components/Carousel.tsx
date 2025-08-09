@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import Image from "next/image";
 
 const slides = [
     "/carousel/slide1.jpg",
@@ -27,18 +28,19 @@ const Carousel = () => {
         <div className="relative w-full max-w-4xl mx-auto overflow-hidden ">
             <div className="flex w-full h-[800px] transition-transform duration-500">
                 {slides.map((src, index) => (
-                    <Link
-                        href="https://www.instagram.com/manzil.brunch/"
+                    <div
                         key={index}
-                        className="relative flex-shrink-0 w-full h-full"
+                        className="w-full flex-shrink-0 h-[400px] relative"
                     >
                         <Image
                             src={src}
                             alt={`Slide ${index}`}
                             fill
-                            className="object-cover"
+                            className="object-cover rounded-xl"
+                            sizes="(max-width: 1024px) 100vw, 1024px"
+                            priority={index === 0}
                         />
-                    </Link>
+                    </div>
                 ))}
             </div>
 
