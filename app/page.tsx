@@ -5,6 +5,7 @@ import { tHome } from "@/lib/translations/Home";
 import Carousel from "@/components/Carousel";
 import Image from "next/image";
 import ReviewAll from "@/components/ReviewsAll";
+import Storytelling from "@/components/Storytelling";
 
 export default function Home() {
     const lang = useLanguageStore((state) => state.lang); // 👈 Récupère la langue depuis le store
@@ -78,36 +79,15 @@ export default function Home() {
             </div>
           </section>
 
-          <section id="reviews-animation" className="p-4">
+          <section id="reviews-animation" className="p-4 bg-terracotta">
             <ReviewAll>
             </ReviewAll>
           </section>
 
+          <section id="storytelling" className="my-8 bg-terracotta">
+            <Storytelling />
+          </section>
 
-            <section className="m-4 mb-8 lg:flex flex-row">
-                <div className="">
-                    <div className="flex flex-col gap-4 mb-4">
-                        <div className="flex flex-col gap-2">
-                            <h3>{intro.subtitle}</h3>
-                            <h2>{intro.title}</h2>
-                        </div>
-                        {intro.paragraphs.map((p, i) => (
-                            <p key={i}>{p}</p>
-                        ))}
-                    </div>
-
-                    <div className="flex flex-col gap-4 mb-4">
-                        <h2>{philosophy.title}</h2>
-                        {philosophy.paragraphs.map((p, i) => (
-                            <p key={i}>{p}</p>
-                        ))}
-                    </div>
-                </div>
-                <div
-                    className="bg-[url('/facade-brunch.jpg')] bg-center bg-cover w-full h-[40dvh] lg:h-auto"
-                    aria-label={philosophy.imageAlt}
-                ></div>
-            </section>
 
             <section className=" mb-8 flex flex-col gap-4 bg-(--primary) py-[100px]">
                 <div className="flex flex-col gap-2 text-center text-(--grey) px-8 mb-8">
